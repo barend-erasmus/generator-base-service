@@ -5,14 +5,14 @@ import * as request from 'supertest';
 import express = require("express");
 
 // Imports app
-import { WebApi } from './app';
+import { <%= name %>Api } from './app';
 
 let api;
 
 describe('GET /api/hello/world', function() {
 
   beforeEach(() => {
-     api = new WebApi(express(), 8000);
+     api = new <%= name %>Api(express(), 8000);
   });
 
   it('should respond with status code 200', (done: () => void) => {

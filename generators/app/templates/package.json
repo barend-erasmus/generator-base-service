@@ -1,5 +1,5 @@
 {
-  "name": "base-service",
+  "name": "<%= gitName %>",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/barend-erasmus/base-service.git"
+    "url": "git+https://github.com/barend-erasmus/<%= gitName %>.git"
   },
   "author": "Barend Erasmus",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/barend-erasmus/base-service/issues"
+    "url": "https://github.com/barend-erasmus/<%= gitName %>/issues"
   },
-  "homepage": "https://github.com/barend-erasmus/base-service#readme",
+  "homepage": "https://github.com/barend-erasmus/<%= gitName %>#readme",
   "dependencies": {
     "body-parser": "^1.17.1",
     "cors": "^2.8.3",

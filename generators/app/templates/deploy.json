@@ -9,26 +9,26 @@
         "curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -",
         "sudo apt-get install -y nodejs",
 
-        "npm --prefix /opt/base-service install",
-        "docker stop base-service",
-        "docker rm base-service",
-        "docker build --no-cache -t base-service /docker-uploads/base-service",
-        "docker run -d -p 8080:3000 --name base-service -v /logs:/logs -v /opt/base-service:/opt/base-service -t base-service"
+        "npm --prefix /opt/<%= gitName %> install",
+        "docker stop <%= gitName %>",
+        "docker rm <%= gitName %>",
+        "docker build --no-cache -t <%= gitName %> /docker-uploads/<%= gitName %>",
+        "docker run -d -p 8080:3000 --name <%= gitName %> -v /logs:/logs -v /opt/<%= gitName %>:/opt/<%= gitName %> -t <%= gitName %>"
     ],
     "directories": [
         {
             "source": "$workspace/src",
-            "destination": "/opt/base-service/src"
+            "destination": "/opt/<%= gitName %>/src"
         }
     ],
     "files": [
         {
             "source": "$workspace/package.json",
-            "destination": "/opt/base-service/package.json"
+            "destination": "/opt/<%= gitName %>/package.json"
         },
         {
             "source": "$workspace/Dockerfile",
-            "destination": "/docker-uploads/base-service/Dockerfile"
+            "destination": "/docker-uploads/<%= gitName %>/Dockerfile"
         }
     ]
 }

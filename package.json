@@ -1,6 +1,6 @@
 {
   "name": "generator-base-service",
-  "version": "0.1.1",
+  "version": "1.0.1",
   "description": "Create Typescript API",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,7 @@
   "homepage": "https://github.com/barend-erasmus/generator-base-service#readme",
   "keywords": ["yeoman-generator"],
   "files": [
-    "app"
+    "generators"
   ],
   "dependencies": {
     "yeoman-generator": "^1.1.1"

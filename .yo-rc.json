@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Barend Erasmus",
+      "authorEmail": "developersworkspace@gmail.com",
+      "authorUrl": ""
+    }
+  }
+}

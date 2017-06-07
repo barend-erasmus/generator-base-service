@@ -21,7 +21,7 @@ if (argv.prod) {
   config = require('./config.prod').config;
 }
 
-export class WebApi {
+export class <%= name %>Api {
 
     constructor(private app: express.Express, private port: number) {
         this.configureMiddleware(app);
@@ -67,7 +67,7 @@ export class WebApi {
 }
 
 const port = 3000;
-const api = new WebApi(express(), port);
+const api = new <%= name %>Api(express(), port);
 api.run();
 
-logger.info(`Listening on ${port}`);
+logger.info(`listening on ${port}`);
