@@ -1,0 +1,26 @@
+{
+  "name": "generator-base-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barend-erasmus/generator-base-service.git"
+  },
+  "author": "Barend Erasmus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/barend-erasmus/generator-base-service/issues"
+  },
+  "homepage": "https://github.com/barend-erasmus/generator-base-service#readme",
+  "keywords": ["yeoman-generator"],
+  "files": [
+    "generators"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^1.1.1"
+  }
+}
