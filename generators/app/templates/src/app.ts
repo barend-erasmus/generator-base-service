@@ -1,5 +1,7 @@
 // Imports
 import express = require("express");
+import * as exphbs from 'express-handlebars';
+import * as path from 'path';
 
 // Imports middleware
 import * as cors from 'cors';
@@ -52,6 +54,11 @@ export class <%= name %>Api {
             msg: 'HTTP Request: {{res.statusCode}} {{req.method}} {{res.responseTime}}ms {{req.url}} {{req.ip}}',
             winstonInstance: logger,
         }));
+
+        // Configure express handlebars
+        app.engine('handlebars', exphbs());
+        app.set('view engine', 'handlebars');
+        app.set('views', path.join(__dirname, 'views'));
     }
 
     private configureRoutes(app: express.Express) {

@@ -1,3 +1,5 @@
 # generator-base-service
 
-`yo base-service <name> <git-name>`
+`yo base-service <name>`
+
+`yo base-service:route <name>`
