@@ -62,7 +62,7 @@ export class <%= name %>Api {
     }
 
     private configureRoutes(app: express.Express) {
-        app.use(`/api/hello`, HelloRouter.world);
+        app.get(`/api/hello`, HelloRouter.world);
     }
 
     private configureErrorHandling(app: express.Express) {
