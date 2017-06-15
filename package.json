@@ -1,6 +1,6 @@
 {
   "name": "generator-base-service",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Create Typescript API",
   "repository": {
     "type": "git",
